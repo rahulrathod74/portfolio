@@ -161,18 +161,85 @@ nav .mobile-nav{
   font-family: sans-serif;
   font-weight: bold
 }
-.card-2>p{
-  font-family: sans-serif;
-  font-weight: bold
-}
-.card-2 button{
-  padding: 10px 60px;
+
+.card-2 >.resume{
+  padding: 10px 40px;
   border-radius: 20px;
   border: none;
   background-color: tomato;
-  color: #fff;
+  
   margin-top: 5px;
-   
 } 
+.resume>a{
+  color: #fff;
+  font-size: 24px;
+  font-family: sans-serif;
+ text-decoration: none;
+
+}
+/* main content */
+.sec-heading{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.aboutme> hr{
+  width: 24%;
+  height: 4px;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 8px;
+  opacity: 1;
+}
+.about-content{
+  background-color:#EE7214 ;
+  border-radius: 20px;
+}
+
+.about-content >p{
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #fff;
+}
+/* skill section */
+
+.sec-heading{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+}
+.skill>hr{
+  width: 18%;
+  height: 4px;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 8px;
+  opacity: 1;
+}
+/* skill logo image */
+.logo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:20px
+  
+}
+.tech figure{
+  width: 60%;
+  margin: 0 auto;
+
+}
+.tech figure img{
+  width: 100%;
+  margin: 0 auto;
+}
+.tech figcaption{
+  font-size: 24px;
+  font-weight: bold;
+}
 
 

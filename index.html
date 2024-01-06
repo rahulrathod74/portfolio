@@ -1,66 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- botstarp cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
       <div class="mobile-nav">
-          <div class="container">
-            <div class="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div> 
-            <menu class="navbar">
-              <ul>
-                <li><a href="#"><b>Home</b></a></li>
-                <li><a href="#"><b>About</b></a></li>
-                <li><a href="#"><b>Skill</b></a></li>
-                <li><a href="#"><b>contact</b></a></li>
-              </ul>
-            </menu>
+        <div class="container">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
+          <menu class="navbar">
+            <ul>
+              <li>
+                <a href="#"><b>Home</b></a>
+              </li>
+              <li>
+                <a href="#"><b>About</b></a>
+              </li>
+              <li>
+                <a href="#"><b>Skill</b></a>
+              </li>
+              <li>
+                <a href="#"><b>contact</b></a>
+              </li>
+            </ul>
+          </menu>
+        </div>
       </div>
       <div class="nav">
-          <menu>
-              <h1 class="logo">Rahul Rathod</h1>
-              <ul>
-                <li><a href="#"><b>Home</b></a></li>
-                <li><a href="#"><b>About</b></a></li>
-                <li><a href="#"><b>Skill</b></a></li>
-                <li><a href="#"><b>contact</b></a></li>
-              </ul>
-          </menu>
-      </div>    
+        <menu>
+          <h1 class="logo">Rahul Rathod</h1>
+          <ul>
+            <li>
+              <a href="#"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="#"><b>About</b></a>
+            </li>
+            <li>
+              <a href="#"><b>Skill</b></a>
+            </li>
+            <li>
+              <a href="#"><b>contact</b></a>
+            </li>
+          </ul>
+        </menu>
+      </div>
     </nav>
 
-      <!-- Hero-Section -->
+    <!-- Hero-Section -->
     <div class="home">
       <div class="card-1">
-        <img src="./photo/profile.jpg" alt="">
+        <img src="./photo/profile.jpg" alt="" />
       </div>
       <div class="card-2">
         <div>
-          <span>Hi,</span> 
-          <img src="./photo/hi.gif" alt="">
+          <span>Hi,</span>
+          <img src="./photo/hi.gif" alt="" />
         </div>
         <h1>I am Rahul Rathod</h1>
-        <h2>I am Frontend Developer</h2>
-        <p>I am from Jalna,Maharastara</p>
-        <p>Email:rahulrathod741258@gmail.com</p>
-        <button>Resume</button>
+        <h2>Frontend Developer</h2>
+        <div class="resume">
+          <a
+            href="https://drive.google.com/file/d/1OkgqsZCkBFqIpSjptn1tRmYRZ2hzjwSa/view?usp=sharing"
+            >Resume</a
+          >
+        </div>
       </div>
     </div>
+    <!-- main content -->
+    <main class="main container mt-5 mb-5">
+      <section class="aboutme">
+        <h2 class="sec-heading  text-center">About</h2>
+        <hr />
+        <div class="about-content mt-4">
+          <p class="p-4">
+            Currently enrolled in the Career Accelerator program at Prepleaf by
+            Masai, I hold a degree in Food Technology. With a month-long
+            internship in web development at Codsoft, I'm passionate about
+            coding and programming. Proficient in HTML, CSS, JS, React, Python,
+            and Figma, my interests extend to sports, travel, and continual tech
+            exploration.
+          </p>
+        </div>
+      </section>
+      <!-- skill section -->
+      <section class="skill mt-4">
+        <h2 class="sec-heading">Skill</h2>
+        <hr />
+        <div class="logo container mt-4">
+          <div class="tech fram-1">
+            <figure>
+              <img src="./photo/html.png" alt="" />
+              <figcaption class="text-center">HTML</figcaption>
+            </figure>
+           
+          </div>
+          <div class="tech fram-2">
+            <figure>
+              <img src="./photo/css.png" alt="" />
+              <figcaption class="text-center">CSS</figcaption>
+            </figure>
+            
+          </div>
+          <div class="tech fram-3">
+            <figure>
+              <img src="./photo/js.png" alt="" />
+              <figcaption class="text-center">JS</figcaption>
+            </figure>
+            
+          </div>
+          <div class="tech fram-4">
+            <figure>
+              <img src="./photo/react.png" alt="" >
+              <figcaption class="text-center">React</figcaption>
+            </figure>
+            
+          </div>
+          <div class="tech fram-5">
+            <figure >
+              <img src="./photo/python.png"alt="">
+              <figcaption class="text-center">Python</figcaption>
+            </figure>
+            
+          </div>
+          <div class="tech fram-6">
+            <figure>
+              <img src="./photo/figma.png" alt="" >
+              <figcaption class="text-center" >Figma</figcaption>
+            </figure>
+           
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
 
-    <div class="about">
-      <h1>Aboutme</h1>
-    </div>
-    
-
+    <!-- botstarp script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
