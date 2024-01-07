@@ -193,14 +193,28 @@ nav .mobile-nav{
   opacity: 1;
 }
 .about-content{
-  background-color:#EE7214 ;
+  background-color:#FFEA20 ;
   border-radius: 20px;
+  padding: 10px 0px;
+  
+}
+.img-div{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.develop{
+  width: 100%;
+  object-fit: cover;
+  
 }
 
 .about-content >p{
-  font-size: 18px;
+  font-size: 24px;
   font-family: sans-serif;
-  color: #fff;
+  color: #000;
 }
 /* skill section */
 
@@ -225,21 +239,63 @@ nav .mobile-nav{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:20px
+  row-gap:40px;
   
 }
-.tech figure{
-  width: 60%;
+.tech figure, .tools{
+  width: 40%;
   margin: 0 auto;
 
 }
-.tech figure img{
+.tech figure img, .tools img{
   width: 100%;
   margin: 0 auto;
 }
-.tech figcaption{
-  font-size: 24px;
-  font-weight: bold;
+.tech figcaption, .tools figcaption{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h-line{
+  width: 90% !important;
+  opacity: 0.25 !important;
 }
 
 
+
+/* Project */
+
+.project-card{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  
+}
+
+.project-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.deatils ,.btn-start{
+  padding: 20px 10px;
+}
+.deatils{
+  padding-bottom:0;
+}
+.deatils p{
+  font-size: 20px;
+}
+.btn-start button{
+
+  padding: 10px 20px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+  
