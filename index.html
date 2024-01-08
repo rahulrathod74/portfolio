@@ -11,50 +11,65 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
+      <!-- Mobile nav -->
       <div class="mobile-nav">
-        <div class="container">
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <menu class="navbar">
-            <ul>
-              <li>
-                <a href="#"><b>Home</b></a>
-              </li>
-              <li>
-                <a href="#"><b>About</b></a>
-              </li>
-              <li>
-                <a href="#"><b>Skill</b></a>
-              </li>
-              <li>
-                <a href="#"><b>contact</b></a>
-              </li>
-            </ul>
-          </menu>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
+        <menu class="navbar">
+          <ul>
+            <li>
+              <a href="./index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="#about"><b>About</b></a>
+            </li>
+            <li>
+              <a href="#skill"><b>Skill</b></a>
+            </li>
+            <li>
+              <a href="#project"><b>Project</b></a>
+            </li>
+            <li>
+              <a href="#contact"><b>Contact</b></a>
+            </li>
+          </ul>
+        </menu>
       </div>
+
+      <!-- Desktop -->
       <div class="nav">
         <menu>
           <h1 class="logo">Rahul Rathod</h1>
           <ul>
             <li>
-              <a href="#"><b>Home</b></a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="#"><b>About</b></a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#"><b>Skill</b></a>
+              <a href="#skill">Skill</a>
             </li>
             <li>
-              <a href="#"><b>contact</b></a>
+              <a href="#project">Project</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </menu>
@@ -75,7 +90,8 @@
         <h2>Frontend Developer</h2>
         <div class="resume">
           <a
-            href="https://drive.google.com/file/d/1OkgqsZCkBFqIpSjptn1tRmYRZ2hzjwSa/view?usp=sharing" download
+            href="https://drive.google.com/file/d/1OkgqsZCkBFqIpSjptn1tRmYRZ2hzjwSa/view?usp=sharing"
+            download
             >Resume</a
           >
         </div>
@@ -83,103 +99,168 @@
     </div>
     <!-- main content -->
     <main class="main container mt-5 mb-5">
-      <section class="aboutme">
-        <h2 class="sec-heading  text-center">About</h2>
+      <section class="aboutme" id="about">
+        <h2 class="sec-heading text-center">About</h2>
         <hr />
         <div class="about-content mt-4">
-          <div class="img-div mt-3  mx-auto">
-            <img class="develop" src="./photo/svg.svg" alt="">
+          <div class="img-div mt-3 mx-auto">
+            <img class="develop" src="./photo/svg.svg" alt="" />
           </div>
-          
+
           <p class="p-4">
-            Embarking on the Career Accelerator program at Prepleaf by Masai, I bring a background in Food Technology, having completed my graduation. My journey into the world of tech kicked off with a month-long stint as a web developer intern at Codsoft, fueling my passion for coding and programming. Proficient in HTML, CSS, JS, React, Python, and Figma, I thrive on leveraging these tools to craft innovative solutions. Beyond coding, I find joy in playing sports, an avenue for physical activity and teamwork, while traveling satiates my curiosity about diverse cultures and places. Eager to expand my horizons, I immerse myself in both technological advancements and personal adventures, seeking constant growth and learning opportunities.
+            Embarking on the Career Accelerator program at Prepleaf by Masai, I
+            bring a background in Food Technology, having completed my
+            graduation. My journey into the world of tech kicked off with a
+            month-long stint as a web developer intern at Codsoft, fueling my
+            passion for coding and programming. Proficient in HTML, CSS, JS,
+            React, Python, and Figma, I thrive on leveraging these tools to
+            craft innovative solutions. Beyond coding, I find joy in playing
+            sports, an avenue for physical activity and teamwork, while
+            traveling satiates my curiosity about diverse cultures and places.
+            Eager to expand my horizons, I immerse myself in both technological
+            advancements and personal adventures, seeking constant growth and
+            learning opportunities.
           </p>
         </div>
       </section>
       <!-- skill section -->
-      <section class="skill mt-4">
+      <section class="skill mt-4" id="skill">
         <h2 class="sec-heading">Skill</h2>
         <hr />
         <div class="logo container mt-4">
-          <h3 class="sec-heading ">1. Tech-stack</h3>
+          <h3 class="sec-heading">1. Tech-stack</h3>
           <div class="tech fram-1">
             <figure>
               <img src="./photo/html.png" alt="" />
               <figcaption class="text-center mt-2">HTML</figcaption>
             </figure>
-           
           </div>
           <div class="tech fram-2">
             <figure>
               <img src="./photo/css.png" alt="" />
-              <figcaption class="text-center mt-2" >CSS</figcaption>
+              <figcaption class="text-center mt-2">CSS</figcaption>
             </figure>
-            
           </div>
           <div class="tech fram-3">
             <figure>
               <img src="./photo/js.png" alt="" />
               <figcaption class="text-center mt-2">JS</figcaption>
             </figure>
-            
           </div>
           <div class="tech fram-4">
             <figure>
-              <img src="./photo/react.png" alt="" >
+              <img src="./photo/react.png" alt="" />
               <figcaption class="text-center mt-2">React</figcaption>
             </figure>
-            
           </div>
           <div class="tech fram-5">
-            <figure >
-              <img src="./photo/python.png"alt="">
+            <figure>
+              <img src="./photo/python.png" alt="" />
               <figcaption class="text-center mt-2">Python</figcaption>
             </figure>
-            
           </div>
         </div>
-        <hr class="h-line bg-light mt-3 mb-3 ">
+        <hr class="h-line bg-light mt-3 mb-3" />
         <h3 class="sec-heading mt-4">2. Tools</h3>
         <div class="logo mt-3">
           <figure class="tools">
-            <img src="./photo/vscode.png" alt="">
-            <figcaption class="text-center mt-2" >Vscode</figcaption>
+            <img src="./photo/vscode.png" alt="" />
+            <figcaption class="text-center mt-2">Vscode</figcaption>
           </figure>
 
           <figure class="tools">
-            <img src="./photo/figma.png" alt="" >
-            <figcaption class="text-center mt-2" >Figma</figcaption>
+            <img src="./photo/figma.png" alt="" />
+            <figcaption class="text-center mt-2">Figma</figcaption>
           </figure>
 
           <figure class="tools">
-            <img src="./photo/github.png" alt="" >
-            <figcaption class="text-center mt-2" >GIt</figcaption>
+            <img src="./photo/github.png" alt="" />
+            <figcaption class="text-center mt-2">GIt</figcaption>
           </figure>
-
         </div>
       </section>
 
       <!-- Project section -->
-      <section class="project mt-5">
+      <section class="project mt-5" id="project">
         <h2 class="sec-heading text-center">Project</h2>
 
-        <div class="project-card mt-3">
+        <div class="project-card mt-4">
           <div class="project-img">
-            <img src="./photo/food delivery.png" alt="food images">
+            <img src="./photo/food delivery.png" alt="food images" />
           </div>
           <div class="deatils">
             <h3 class="text-center">Food Delivery clone</h3>
-            <p class="text-center">Its a website that helps user to order various types of fast foods with a good user interface created using HTML and CSS  showcasing my skills of UI development.</p>
+            <p class="text-center">
+              Its a website that helps user to order various types of fast foods
+              with a good user interface created using HTML and CSS showcasing
+              my skills of UI development.
+            </p>
           </div>
-          <div class="btn-start text-center mt-2" >
-            <a href="https://github.com/rahulrathod78/Food-deliver"><button>Github</button></a>
-            <a href="https://fast-food-delivery74.netlify.app/"><button>Live </button></a>
+          <div class="btn-start text-center mt-2">
+            <a href="https://github.com/rahulrathod78/Food-deliver"
+              ><button>Github</button></a
+            >
+            <a href="https://fast-food-delivery74.netlify.app/"
+              ><button>Live</button></a
+            >
           </div>
         </div>
       </section>
-      
+      <!-- github stats -->
+      <section>
+        <div></div>
+      </section>
+
+      <!-- contact section -->
+      <section class="contact mt-5" id="contact">
+        <h2 class="sec-heading">Contact Me</h2>
+        <div>
+          <div class="contact-logo">
+            <a href="https://www.linkedin.com/in/rahul-rathod281/"
+              ><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a
+            >
+            <a href="https://github.com/rahulrathod74"
+              ><i class="fa-brands fa-square-github"></i><span>Github</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-square-envelope"></i
+              ><span>rahulrathod741258@gmail.com</span></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+    <footer class="foot mt-5 container">
+      <div class="foot-about">
+        <p class="sec-heading">About Me</p>
+        <p>
+          Currently enrolled in the Career Accelerator program at Prepleaf by
+          Masai, I hold a degree in Food Technology. With a month-long
+          internship in web development at Codsoft, I'm passionate about coding
+          and programming. Proficient in HTML, CSS, JS, React, Python, and
+          Figma, my interests extend to sports, travel, and continual tech
+          exploration.
+        </p>
+      </div>
+      <hr />
+      <div class="navigation mt-4">
+        <p class="sec-heading">Navigation</p>
+        <ul>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Skill</li>
+          <li><a href="#"></a>Project</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="foot-contact mt-4">
+        <p class="sec-heading">Contact me</p>
+        <address>Watur Fata,Pratur,Jalna, Maharashtra-431501</address>
+        <p>Phone No:9767682816</p>
+        <ul></ul>
+      </div>
+    </footer>
 
     <!-- botstarp script -->
     <script
