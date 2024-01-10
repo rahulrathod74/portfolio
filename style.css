@@ -360,7 +360,6 @@ nav .mobile-nav {
   color: white;
 }
 .foot-contact p {
-  margin-top: -10px;
   color: white;
 }
 .foot hr {
@@ -372,3 +371,53 @@ nav .mobile-nav {
 }
 
 /* media queries */
+@media screen and (min-width:575px) {
+  .logo{
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 60px;
+  }
+  .logo h3{
+    width: 100%;
+  }
+  .logo .tech{
+      width: 40%;
+  }
+  .logo .tech figure{
+    width: 90%;
+  }
+
+  /* contact */
+  .contact-logo{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .contact-logo a:last-child{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo .tech figure {
+    width: 65%;
+  } 
+  .tools{
+    width: 32%;
+  }
+  .project-card{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+.foot-about .sec-heading, .navigation .sec-heading, .foot-contact .sec-heading {
+    
+  font-size: 32px;
+}
+.foot-about p,.navigation li, .foot-contact address ,.foot-contact p {
+  font-size: 24px;
+}
+
+
+}
