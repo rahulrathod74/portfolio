@@ -352,6 +352,11 @@ nav .mobile-nav {
   color: white;
   line-height: 40px;
 }
+.navigation ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
 
 .foot-contact {
   display: flex;
@@ -430,8 +435,10 @@ nav .mobile-nav {
 /* laptop and desktop media query */
 @media screen and (min-width:992px) {
   nav .nav{
+    
     display: block;
     background-color: rgba(255, 78, 78, 0.787);
+    
   }
   nav .mobile-nav{
     display: none;
@@ -509,6 +516,8 @@ nav .mobile-nav {
   @media screen and (min-width: 1100px) {
     nav .nav{
       background-color: var(--primary);
+      /* position: sticky;
+      top: 0; */
     }
     .home{
       background-color: var(--secondary);
@@ -529,6 +538,10 @@ nav .mobile-nav {
     .card-2{
       width: 38%;
       align-items: flex-start;
+    }
+    .card-2 .resume:hover{
+      background-color: #dc3545;
+      transition: 0.3s ease-in-out;
     }
     .aboutme> hr{
       width: 7%;
@@ -565,10 +578,25 @@ nav .mobile-nav {
       font-weight: bold;
       color: white;
     }
+    .logo .tech{
+      transition: 0.5s ease-in-out;
+    }
+
+    .tech:hover{
+      transform: scale(1.2);
+      z-index: 2;
+      
+    }
     .tools{
       padding: 20px 40px;
       color: white;
       font-weight: bold;
+      transition: 0.5s ease-in-out;
+    }
+    .tools:hover{
+      transform: scale(1.2);
+      z-index: 2;
+
     }
 
     /* project section */
@@ -586,6 +614,15 @@ nav .mobile-nav {
     }
     .project-img, .deatils{
       width: 48%;
+      
+    }
+    .project-img img{
+      transition: 0.5s ease-in-out;
+    }
+    .project-img img:hover{
+      transform: translateY(10px);
+      z-index: 2;
+
     }
     .deatils h3, .deatils p, .deatils div{
       text-align: left !important;
@@ -601,5 +638,73 @@ nav .mobile-nav {
       display: flex;
       column-gap: 20px;
     }
-    
+    .btn-start button{
+      transition: 0.5s ease-in-out;
+    }
+    .btn-start button:hover{
+      background-color: black;
+      
+    }
+    .contact{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .contact-logo{
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    .contact-logo a{
+      width: 30%;
+      margin: 0 auto;
+    }
+    .contact-logo i{
+      transition: 0.5s ease-in-out;
+    }
+    .contact-logo i:hover{
+      transform: scale(1.2);
+      z-index: 2;
+
+    }
+    .contact-logo a:last-child{
+      width: 30%;
+    }
+    .foot{
+      min-width: 100% !important;
+    }
+    .foot .flex-box{
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+    .foot .foot-about{
+      width: 60%;
+      display: block;
+    }
+    .foot-about p{
+      text-align: left;
+      font-size: 18px;
+    }
+    .foot .navigation{
+      display: block;
+      width: 20%;
+    }
+    .navigation ul li{
+      line-height: 50px;
+      font-size: 18px;
+    }
+    .navigation ul li a{
+      font-size: 1em;
+    }
+    .foot .foot-contact{
+      width: 50%;
+      display: block;
+      padding: 0;
+      text-align: left;
+    }
+    .foot-contact .sec-heading{
+      text-align: left;
+    }
+    .foot-contact address, .foot-contact p:last-child{
+      font-size: 18px;
+    }
   }
