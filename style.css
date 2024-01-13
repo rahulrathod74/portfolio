@@ -1,3 +1,9 @@
+:root{
+  --primary: #FF4C29;
+  --secondary: #101032;
+  --extra: #cfe2ff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -133,8 +139,8 @@ nav .mobile-nav {
   display: flex;
   align-items: center;
 }
-.card-2 > div span {
-  font-size: 1.5rem;
+.card-2 > div >span {
+  font-size: 40px;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -144,6 +150,7 @@ nav .mobile-nav {
 .card-2 > h1 {
   font-family: sans-serif;
   font-weight: bold;
+  
 }
 .card-2 > h2 {
   font-family: sans-serif;
@@ -418,6 +425,181 @@ nav .mobile-nav {
 .foot-about p,.navigation li, .foot-contact address ,.foot-contact p {
   font-size: 24px;
 }
-
-
 }
+
+/* laptop and desktop media query */
+@media screen and (min-width:992px) {
+  nav .nav{
+    display: block;
+    background-color: rgba(255, 78, 78, 0.787);
+  }
+  nav .mobile-nav{
+    display: none;
+  }
+  .nav menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px ;
+    align-items: center; 
+  }
+  .nav menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    
+  }
+  .nav menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .home{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+  }
+  .home .card-1{
+    width: 40%;
+  }
+  .home .card-1 img{
+    border-radius: 50px;
+  }
+  /* about me */
+  .aboutme> hr{
+    width: 10%;
+  }
+  .about-content{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img-div{
+    width: 50%;
+  }
+  /* skill section */
+  .skill >hr{
+    width: 7%;
+  }
+  .logo{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .logo .tech {
+    width: 30%;
+  }
+  .logo .tech figure {
+    width: 70%;
+  } 
+  /* tools */
+  .tools{
+    width: 20%;
+  }
+  /* project  card*/
+  .project-card{
+    width: 70%;
+  }
+
+  }
+  
+
+  @media screen and (min-width: 1100px) {
+    nav .nav{
+      background-color: var(--primary);
+    }
+    .home{
+      background-color: var(--secondary);
+      height: 80vh;
+    }
+    .home .card-1{
+      margin-left: 156px;
+    }
+    .home .card-1 img{
+      border: 10px solid white;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      margin: 20px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .card-2{
+      width: 38%;
+      align-items: flex-start;
+    }
+    .aboutme> hr{
+      width: 7%;
+    }
+    .about-content{
+      background-color: var(--extra);
+    }
+    .img-div{
+    width: 30%;
+    }
+    .about-content > p{
+      font-size: 20px;
+    }
+
+    /* skill section */
+    .skill > hr{
+      width: 5%;
+    }
+    .logo {
+      width: 80%;
+      background-color: var(--extra);
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    .logo .tech  ,.tools{
+      background-color: #899fc1;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+    .logo .tech figure {
+      width: 40%;
+    }
+    .tech figcaption{
+      font-weight: bold;
+      color: white;
+    }
+    .tools{
+      padding: 20px 40px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* project section */
+    .flex-box{
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    .project-card{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+    }
+    .project-img, .deatils{
+      width: 48%;
+    }
+    .deatils h3, .deatils p, .deatils div{
+      text-align: left !important;
+    }
+    .deatils{
+      padding: 0 5px;
+    }
+    .deatils p{
+      margin: 0;
+    }
+    .btn-start{
+      padding: 0px;
+      display: flex;
+      column-gap: 20px;
+    }
+    
+  }
