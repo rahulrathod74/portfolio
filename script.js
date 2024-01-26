@@ -7,3 +7,15 @@ hamburger.addEventListener('click', function() {
   menu.classList.toggle('active');
   bod.classList.toggle('wid')
 });
+
+
+// var typed = new Typed("#main-heading", {
+//   strings: [
+//     "Front-end Developer.",
+//     "React Developer.",
+//     "JavaScript Developer.",
+//   ],
+//   typeSpeed: 60,
+//   backSpeed: 60,
+//   loop: true,
+// });
