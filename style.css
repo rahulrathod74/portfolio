@@ -381,6 +381,13 @@ nav .mobile-nav {
   background-color: white;
   margin: 0 auto;
 }
+.social{
+  display: flex;
+  gap: 10px;
+}
+.social i{
+  font-size: 24px;
+}
 
 /* media queries */
 @media screen and (min-width:575px) {
@@ -464,6 +471,13 @@ nav .mobile-nav {
     font-size: 24px;
     font-family: sans-serif;
     font-weight: bold;
+    cursor: pointer;
+  }
+  .nav menu ul li a:hover{
+    background-color: black;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.2s ;
   }
   .home{
     flex-direction: row;
@@ -713,5 +727,12 @@ nav .mobile-nav {
     }
     .foot-contact address, .foot-contact p:last-child{
       font-size: 18px;
+    }
+    .social{
+      display: flex;
+      gap: 10px;
+    }
+    .social i{
+      font-size: 32px;
     }
   }
